@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$390000$uXTiIzy0B9jWB8r25x15BY$XeAdc/UNhUZPFIN+OuR+I3RrbTlSC35h3Cyb9hnnsPk=",
-    "last_login": "2022-10-03T19:43:49.219Z",
+    "last_login": "2022-10-04T04:37:00.160Z",
     "is_superuser": true,
     "username": "root",
     "first_name": "",
@@ -38,7 +38,7 @@
     "image": "https://irecommend.ru/sites/default/files/product-images/177327/molokorek.jpg",
     "category": "products",
     "qty": "12",
-    "cost": "450.00"
+    "cost": "850.00"
   }
 },
 {
@@ -71,7 +71,7 @@
   "fields": {
     "name": "Delorian",
     "description": "",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/DeLorean_Time_Machine_Replica_Kovacs.jpg",
+    "image": "https://5sector.com.ua/wp-content/uploads/2018/08/3-22-600x600.jpg",
     "category": "other",
     "qty": "1",
     "cost": "99999.99"
