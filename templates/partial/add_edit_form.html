@@ -17,13 +17,19 @@
     </div>
 </div>
 <div class="col-12">
-    <div class="form-outline">
+    <div class="form-outline mb-1">
         {{ form.category }}
         {% for error in form.category.errors %}
             <p class="alert alert-danger" role="alert">Введите категорию</p>
         {% endfor %}
     </div>
 </div>
+<div class="col-12">
+    <div class="form-outline ">
+        {{ form.description }}
+    </div>
+</div>
+
 <div class="col-12">
     <div class="form-outline">
         {{ form.qty }}

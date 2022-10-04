@@ -8,7 +8,7 @@ def search_view(request):
     if form.is_valid():
         name = form.cleaned_data["search"]
         try:
-            products = Product.objects.get(name=name).filter(qty__gt=0)
+            products = Product.objects.get(name=name)
         except Exception:
             context = {
                 'error': 'Продукт с таким названием не найден',
