@@ -4,16 +4,7 @@
     <div class="form-outline">
         {{ form.name }}
         {% for error in form.name.errors %}
-            <p class="alert alert-danger" role="alert">Введите автора</p>
-        {% endfor %}
-    </div>
-</div>
-
-<div class="col-12">
-    <div class="form-outline">
-        {{ form.description }}
-        {% for error in form.description.errors %}
-            <p class="alert alert-danger" role="alert">Введите почту</p>
+            <p class="alert alert-danger" role="alert">Введите название</p>
         {% endfor %}
     </div>
 </div>
@@ -21,7 +12,7 @@
     <div class="form-outline">
         {{ form.image }}
         {% for error in form.image.errors %}
-            <p class="alert alert-danger" role="alert">Введите текст</p>
+            <p class="alert alert-danger" role="alert">Введите ссылку на изображение</p>
         {% endfor %}
     </div>
 </div>
@@ -29,7 +20,7 @@
     <div class="form-outline">
         {{ form.category }}
         {% for error in form.category.errors %}
-            <p class="alert alert-danger" role="alert">Введите текст</p>
+            <p class="alert alert-danger" role="alert">Введите категорию</p>
         {% endfor %}
     </div>
 </div>
@@ -37,7 +28,7 @@
     <div class="form-outline">
         {{ form.qty }}
         {% for error in form.qty.errors %}
-            <p class="alert alert-danger" role="alert">Введите текст</p>
+            <p class="alert alert-danger" role="alert">Введите количество более нуля</p>
         {% endfor %}
     </div>
 </div>
@@ -45,7 +36,7 @@
     <div class="form-outline">
         {{ form.cost }}
         {% for error in form.cost.errors %}
-            <p class="alert alert-danger" role="alert">Введите текст</p>
+            <p class="alert alert-danger" role="alert">Введите цену</p>
         {% endfor %}
     </div>
 </div>
