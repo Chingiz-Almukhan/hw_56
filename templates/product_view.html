@@ -16,7 +16,11 @@
                             <div class="product p-4">
                                 <div class="mt-4 mb-3">
                                     <h1>{{ product.name }}</h1>
-                                    <span class="text-muted ">{{ product.category }}</span>
+                                    {% for category in categories %}
+                                        {% if category.0 == product.category %}
+                                            <span class="text-muted ">{{ category.1 }}</span>
+                                        {% endif %}
+                                    {% endfor %}
                                     <div class="d-flex flex-row align-items-center">
                                         <span class="h4">{{ product.cost }}₸</span>
                                     </div>
