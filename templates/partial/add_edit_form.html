@@ -1,0 +1,55 @@
+{% csrf_token %}
+
+<div class="col-12">
+    <div class="form-outline">
+        {{ form.name }}
+        {% for error in form.name.errors %}
+            <p class="alert alert-danger" role="alert">Введите автора</p>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="col-12">
+    <div class="form-outline">
+        {{ form.description }}
+        {% for error in form.description.errors %}
+            <p class="alert alert-danger" role="alert">Введите почту</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="col-12">
+    <div class="form-outline">
+        {{ form.image }}
+        {% for error in form.image.errors %}
+            <p class="alert alert-danger" role="alert">Введите текст</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="col-12">
+    <div class="form-outline">
+        {{ form.category }}
+        {% for error in form.category.errors %}
+            <p class="alert alert-danger" role="alert">Введите текст</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="col-12">
+    <div class="form-outline">
+        {{ form.qty }}
+        {% for error in form.qty.errors %}
+            <p class="alert alert-danger" role="alert">Введите текст</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="col-12">
+    <div class="form-outline">
+        {{ form.cost }}
+        {% for error in form.cost.errors %}
+            <p class="alert alert-danger" role="alert">Введите текст</p>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="col-12">
+    <button type="submit" class="btn btn-primary mt-4">{{ button_text }}</button>
+</div>
